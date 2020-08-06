@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app='guri'>
 <head>
     <meta charset="UTF-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1>hi</h1>
+    <div ng-controller='guri_c'>
+        
+        <h1> i love u {{name2}}</h1>
+        {{name}}<br>
+        {{age}}
+    </div> 
 </body>
 </html>
