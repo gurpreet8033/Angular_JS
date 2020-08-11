@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='mod_1'>
+<head>
+    <meta charset="UTF-8">
+    <script src="angular.min.js"></script>
+    <script src="calci.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Name Calculator</h1>
+    <div id="guri"  ng-controller='cont_1' >
+        <section>Section1
+            <article>Article</article>
+            </section>
+        <div>
+            your name: 
+            <input type="text"
+             ng-model='name'
+             ng-keyup="display_n();">
+        </div>
+        <div>Total numeric value of your name is:{{totalValue}}</div>
+    </div> 
+
+    <script> 
+       //var elem=document.getElementById('guri');
+        //console.log(elem);
+
+        //console.log(elem.getAttribute('ng-app'))
+
+        var elem2 = document.querySelector("[ng-controller]");
+        console.log(elem2);
+        console.log(elem2.getAttribute('ng-controller'));
+        
+    </script>   
+</body>
+</html>

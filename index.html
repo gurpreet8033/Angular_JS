@@ -9,10 +9,24 @@
 </head>
 <body>
     <div ng-controller='guri_c'>
+        <input type="text"
+                ng-model="name"
+                
+                ng-blur="up();"> 
+
+        <input type="text"
+                ng-model="name2"
+                
+                ng-blur="low();"> 
+        <input type="submit" ng-click="Yellow()" value="yellow">
+        <input type="submit" ng-click="Red()" value="red">
+        <img src="img/guri_{{state}}" width="200" height="300">
         
-        <h1> i love u {{name2}}</h1>
-        {{name}}<br>
-        {{age}}
-    </div> 
+        <input type="submit" ng-click="handImage()" value="Hand">
+        <input type="submit" ng-click="noHandImage()" value="Nohand">
+
+    <div style="background-color:{{backcolor}};width:{{width}};height:100px"></div>
+    </div>  
+    {{name2}}
 </body>
 </html>
